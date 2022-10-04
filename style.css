@@ -1,0 +1,79 @@
+/* variables */
+:root {
+  --primary: #917e77;
+  --secondary: #572935;
+}
+
+/* reset */
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--secondary);
+}
+li {
+  list-style-type: none;
+}
+/* base styles */
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Regular";
+}
+button {
+  border: 1px solid var(--secondary);
+  border-radius: 10px;
+  background-color: var(--secondary);
+  width: 100px;
+  font-weight: bold;
+}
+button a {
+  color: white;
+}
+
+/* start from working on the hover effect to come out better */
+
+button:hover {
+  background-color: #fff;
+}
+button a:hover,
+button a:focus {
+  color: var(--secondary);
+}
+.button {
+  border: 1px solid var(--secondary);
+  background-color: white;
+  font-weight: bold;
+}
+.button a {
+  color: var(--secondary);
+}
+
+/* fonts */
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(fonts/Roboto-Regular.ttf);
+}
+.we {
+  color: #904458;
+}
+.walk {
+  color: var(--secondary);
+}
+
+/* mobile styles */
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+}
+
+/* large tablets and laptops */
+@media screen and (min-width: 960px) {
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+}
