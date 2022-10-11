@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 /* variables */
 :root {
   --primary: #917e77;
@@ -15,6 +18,7 @@ li {
   text-decoration: none;
   color: var(--secondary);
 }
+
 li {
   list-style-type: none;
 }
@@ -23,33 +27,50 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Regular";
 }
-button {
-  border: 1px solid var(--secondary);
-  border-radius: 10px;
-  background-color: var(--secondary);
-  width: 100px;
-  font-weight: bold;
-}
-button a {
-  color: white;
-}
-
-/* start from working on the hover effect to come out better */
-
-button:hover {
-  background-color: #fff;
-}
-button a:hover,
-button a:focus {
-  color: var(--secondary);
-}
+/* button {
+  border: none;
+} */
 .button {
   border: 1px solid var(--secondary);
+  border-radius: 8px;
+  background-color: var(--secondary);
+  width: 6.25rem;
+  font-weight: bold;
+  color: white;
+  padding: 5px 20px;
+  margin: 2.5rem 0;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: var(--secondary);
+}
+
+.button-two {
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
   background-color: white;
   font-weight: bold;
+  padding: 0.3rem 1.25rem;
 }
-.button a {
-  color: var(--secondary);
+.button-two:hover {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+/* nav section styling */
+nav {
+  background-color: var(--primary);
+  padding: 0.1px 0;
+  margin-top: 1rem;
+}
+nav h4:hover {
+  color: #ccc;
+}
+nav h4 {
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 /* fonts */
@@ -65,6 +86,157 @@ button a:focus {
 }
 
 /* mobile styles */
+
+h1 {
+  text-align: center;
+}
+.flex-one > ul {
+  display: flex;
+  justify-content: center;
+}
+.flex-one > ul > li {
+  margin: 0 0.2rem;
+}
+/* style the head-image */
+
+.head-img {
+  width: 100%;
+  text-align: center;
+}
+
+.grid-one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  margin: 0.7rem 0;
+}
+
+.item-a {
+  margin-left: 1rem;
+}
+.item-b {
+  margin-right: 20px;
+  grid-column: 3/4;
+}
+
+.item-c {
+  grid-column: 2/3;
+}
+
+.item-a,
+.item-b,
+.item-c {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.item-a:hover,
+.item-b:hover,
+.item-c:hover {
+  background-color: #eee;
+}
+
+/* welcome section */
+.welcome {
+  background-color: var(--primary);
+  padding-top: 0.3rem;
+}
+.welcome > h2 {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  padding: 0.6rem 0;
+}
+.flex-four {
+  background-color: #fff;
+}
+.flex-four > img {
+  width: 100%;
+}
+.flex-four > div {
+  margin: 0.3rem;
+}
+.flex-four > div > p {
+  margin: 0.7rem;
+}
+
+.flex-four > div {
+  text-align: center;
+}
+.flex-four > div > p {
+  text-align: justify;
+}
+/* our top models */
+.top-models > h3,
+.grid-two > div {
+  text-align: center;
+}
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 0.6rem 0;
+}
+
+.grid-two > div img {
+  /* width: 5px; */
+  width: 100%;
+}
+
+.item-e {
+  grid-column: 3/4;
+}
+/* i didnt define the row of item-c 
+bacause it is also in low by default */
+.item-f {
+  grid-column: 2/3;
+}
+.item-d:hover,
+.item-e:hover,
+.item-f:hover {
+  background-color: #eee;
+}
+
+/* styling the "Our Modelling Services" section */
+.modeling-services > h3 {
+  text-align: center;
+}
+.grid-three > div {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.grid-three > div {
+  margin: 1.25rem 0;
+}
+
+.grid-three > div > img {
+  width: 50%;
+}
+
+.grid-three > div > p {
+  margin: 10px 0;
+}
+
+/* footer style */
+.footer {
+  background-color: var(--primary);
+
+  color: #fff;
+  padding: 0.3rem 0;
+}
+.footer h3 {
+  margin-left: 1.25rem;
+}
+.footer div {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.footer ol li {
+  color: #fff;
+  list-style-type: decimal;
+}
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
