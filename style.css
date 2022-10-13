@@ -107,16 +107,16 @@ h1 {
 .grid-one {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 0.6rem;
   width: 100%;
-  margin: 0.7rem 0;
+  max-width: 60rem;
+  margin: 0.7rem auto;
+}
+.grid-one > div {
+  margin: 0 0.5rem;
 }
 
-.item-a {
-  margin-left: 1rem;
-}
 .item-b {
-  margin-right: 20px;
   grid-column: 3/4;
 }
 
@@ -238,14 +238,134 @@ bacause it is also in low by default */
   list-style-type: decimal;
 }
 
+/* small screen styles */
+@media screen and (min-width: 576px) {
+  body {
+    background-color: #aaa;
+  }
+
+  .flex-one > ul {
+    display: flex;
+  }
+  .flex-one > ul > li {
+    margin: 0 0.2rem;
+  }
+
+  /* this is to design the grid-one */
+
+  .grid-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px 0;
+    /* grid-auto-rows: minmax(100px, 250px); */
+  }
+
+  .grid-three > div {
+    margin: 0;
+  }
+
+  .grid-three > div img {
+    width: 100%;
+    height: 50%;
+  }
+  .grid-three > div:nth-child(2) {
+    grid-column: 3/4;
+  }
+  .grid-three > div:nth-child(3) {
+    margin-top: -2rem;
+    grid-column: 2/3;
+  }
+}
+
 /* small tablet styles */
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #ccc;
+  }
+  .flex-one {
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-between;
+    margin: 0 1.25rem 0 1.75rem;
+  }
+  .flex-one > ul {
+    display: flex;
+    /* align-items: center; */
+    margin-top: 0.75rem;
+  }
+  .flex-two {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .item-b {
+    grid-column: 2/3;
+  }
+
+  .item-c {
+    grid-column: 3/4;
+  }
+
+  /* desing the welcome section */
+  .welcome {
+    /* position: relative; */
+    height: 25rem;
+  }
+  .flex-four {
+    /* position: absolute; */
+    display: flex;
+    margin: 0.5rem 0 0 4rem;
+    /* z-index: 1; */
+  }
+  .flex-four > img {
+    width: 35%;
+  }
+  .flex-four > div > p {
+    padding: 5rem 2rem 0 2rem;
+  }
+
+  /* our top models */
+  .top-models {
+    margin-top: 6rem;
+  }
+
+  .item-e {
+    grid-column: 2/3;
+  }
+
+  .item-f {
+    grid-column: 3/4;
+  }
+
+  /* our modeling services */
+
+  .grid-three > div:nth-child(2) {
+    grid-column: 2/3;
+  }
+  .grid-three > div:nth-child(3) {
+    margin-top: 0;
+    grid-column: 3/4;
+  }
+  .grid-three > div:nth-child(1) > p {
+    margin-bottom: 0.9rem;
+  }
+  .grid-three > div:nth-child(2) > p {
+    margin-bottom: 1.75rem;
+  }
 }
 
 /* large tablets and laptops */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 992px) {
+  body {
+    background-color: #ddd;
+  }
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
+}
+
+/* large desktop styles */
+@media screen and (min-width: 1400px) {
 }
