@@ -240,10 +240,6 @@ bacause it is also in low by default */
 
 /* small screen styles */
 @media screen and (min-width: 576px) {
-  body {
-    /* background-color: #aaa; */
-  }
-
   .flex-one {
     display: flex;
     flex: 1 1 0;
@@ -274,7 +270,6 @@ bacause it is also in low by default */
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     margin: 10px 0;
-    /* grid-auto-rows: minmax(100px, 250px); */
   }
 
   .grid-three > div {
@@ -296,20 +291,6 @@ bacause it is also in low by default */
 
 /* small tablet styles */
 @media screen and (min-width: 768px) {
-  body {
-    /* background-color: #ccc; */
-  }
-  /* .flex-one {
-    display: flex;
-    flex: 1 1 0;
-    justify-content: space-between;
-    margin: 0 1.25rem 0 1.75rem;
-  }
-  .flex-one > ul {
-    display: flex;
-    align-items: center; 
-    margin-top: 0.75rem;
-  } */
   .flex-two {
     display: flex;
     justify-content: space-around;
@@ -324,22 +305,15 @@ bacause it is also in low by default */
   }
 
   /* desing the welcome section */
-  .welcome {
-    /* position: relative; */
-    /* height: 60vh; */
-  }
+
   .flex-four {
-    /* position: absolute; */
     display: flex;
     margin: 0.5rem 0 0 4rem;
-    /* z-index: 1; */
   }
   .flex-four > img {
     width: 35%;
   }
-  /* .flex-four {
-    float: right;
-  } */
+
   .flex-four > div > p {
     padding: 8rem 2rem 0 2rem;
   }
@@ -373,10 +347,6 @@ bacause it is also in low by default */
 
 /* large tablets and laptops */
 @media screen and (min-width: 992px) {
-  body {
-    /* background-color: aquamarine; */
-  }
-
   .flex-four > div > p {
     padding: 12rem 2rem 0 2rem;
   }
